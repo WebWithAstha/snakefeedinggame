@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/427/427533.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div id="main" class="w-screen h-screen px-4 flex flex-col items-center justify-center bg-zinc-100 relativebg-no-repeat bg-center bg-cover" style=" background-image: linear-gradient(to right bottom,rgba(5, 7, 8, 0.416),rgba(0, 250, 196, 0.356),rgba(0, 0, 0, 0.489)), url(https://i.pinimg.com/564x/48/a3/49/48a349ff58c156f654882c828388e6e4.jpg);">
+    <h1 class="text-3xl md:text-6xl font-bold uppercase md:my-4 my-2 mix-blend-burn bg-no-repeat bg-cover bg-top" style="color: transparent; background: url(https://i.pinimg.com/564x/91/2f/ab/912fab638b3495c6e3dce0b4a618d49f.jpg);-webkit-text-stroke: 1px black; background-clip: text;">feed snake</h1>
+    <button class="bg-zinc-800 px-4 py-2 outline-none absolute right-4 top-4 font-semibold uppercase text-sm rounded hover:bg-zinc-700 cursor-pointer text-white">reset high score</button>
+    <div id="game-wrapper" class="w-full md:w-2/5 h-3/4 bg-blue-800 relative overflow-hidden rounded-md bg-no-repeat bg-center bg-cover border-8 border-blue-500 shadow-xl shadow-neutral-400" style=" background-image: url(https://i.pinimg.com/564x/cb/de/eb/cbdeebda5960e7008224661f758e5e7a.jpg);">
+      <div id="game-dets" class="w-full h-1/6 bg-blue-500 flex items-center justify-between px-4 gap-5">
+        <h3 class="md:text-lg lg:text-xl capitalize font-medium">score -<span id="score" class="ml-2 bg-zinc-600 rounded text-white py-1 px-3">0</span></h3>
+        <h3 class="md:text-lg lg:text-xl capitalize font-medium">high score -<span id="high-score" class="ml-2 bg-zinc-600 rounded text-white py-1 px-3 ">0</span></h3>
+      </div>
+      <div id="game-board" class="w-full h-4/6  grid" style="grid-template: repeat(20,1fr)/repeat(30,1fr);">
+      </div>
+      <div id="controller" class="h-1/6 w-full bg-zinc-700 flex items-center justify-center text-white">
+        <i id="ArrowDown" class="ri-arrow-down-line w-full h-full flex items-center justify-center text-2xl hover:bg-zinc-600 cursor-pointer border-t-2 border-r-2 border-zinc-600"></i>
+        <i id="ArrowLeft" class="ri-arrow-left-line w-full h-full flex items-center justify-center text-2xl hover:bg-zinc-600 cursor-pointer border-t-2 border-r-2 border-zinc-600"></i>
+        <i id="ArrowUp" class="ri-arrow-up-line w-full h-full flex items-center justify-center text-2xl hover:bg-zinc-600 cursor-pointer border-t-2 border-r-2 border-zinc-600" ></i>
+        <i id="ArrowRight" class="ri-arrow-right-line w-full h-full flex items-center justify-center text-2xl hover:bg-zinc-600 cursor-pointer border-t-2 border-zinc-600"></i>
+      </div>
+      <div id="game-over" class="w-full h-5/6 flex flex-col gap-2 text-white items-center justify-center" style="display: none;">
+        <h2 class="text-3xl font-semibold">Game Over !!</h2>
+        <button class="bg-blue-500 px-8 py-2 rounded text-xl uppercase text-white outline-none hover:bg-blue-700 cursor-pointer">play</button>
+      </div>
+    </div>
+  </div>
+
+
+  
+
+  <script src="script.js"></script>
+</body>
+
+</html>
